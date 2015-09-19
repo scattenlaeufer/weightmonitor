@@ -1,4 +1,3 @@
 *.swp
 *.swo
-data
-data_test
+data*
