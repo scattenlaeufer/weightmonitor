@@ -7,7 +7,7 @@ from matplotlib import dates as dates
 parser = argparse.ArgumentParser(description='A program to monitor my weight and nicly plot it.')
 parser.add_argument('-a','--analyze-only',action='store_true',default=False,help='Only analyze existing data without adding new datapoints.')
 parser.add_argument('-w','--weight',metavar='WEIGHT',type=float,default=None,help='the weight to be loged. If WEIGHT == 0, the existing data will only be analyzed.')
-parser.add_argument('-b','--blood-pressure',metavar='BLOODPRESSURE',type=int,nargs=2,default=None,help='Blood pressure with SYS beeing systolic and DIAS being diastolic blood pressure')
+parser.add_argument('-b','--blood-pressure',metavar=('SYS','DIAS'),type=int,nargs=2,default=None,help='Blood pressure with SYS beeing systolic and DIAS being diastolic blood pressure')
 parser.add_argument('-d','--date',metavar='DATE',type=str,default=None,help='Specify the date. If none, the current date will be used. Format: YYYY-MM-DD-hhmm')
 parser.add_argument('-t','--testing',action='store_true',default=False,help='Only use dummy data.')
 
